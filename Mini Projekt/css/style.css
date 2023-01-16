@@ -1,0 +1,175 @@
+* {
+	margin: 0;
+	padding: 0;
+	border-box-sizing: border-box;
+}
+
+header, nav, section, article, footer {
+    display: block;
+}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 80%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+body {
+	font-family: verdana, sans-serif;
+	color: #4c4c4c;
+}
+
+h1 {
+	font-family: "century gothic";
+	font-size: 2em;
+	color: #cc3333;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-family: "century gothic";
+	font-size: 1.6em;
+	color: #cc3333;
+}
+
+#wrapper {
+	width: 80%;
+	margin: 0 auto;
+	background: white;
+}
+
+header {
+	background-image: url("../img/Hintgergund 1.jpg");
+	background-size: 100%;
+	background-position: left;
+	height: 400px;
+}
+
+
+.welcome {
+	float: right;
+	width: 85%;
+	margin-top: 15px;
+	color: #4c4c4c;
+	text-shadow: 1px 1px #4c4c4c;
+}
+
+/* nav styling */
+
+nav ul {
+	list-style-type: none;
+	text-align: right;
+	padding-left: 5px;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 5px 10px 5px 0;
+	margin-right: 10px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #f2f2f2;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+nav ul li a:hover {
+	border-bottom: 2px solid ;
+}
+
+.current {
+	border-bottom: 2px solid ;
+}
+
+/*styling articles */
+
+
+.base img {
+	float: left;
+	width: 45%;
+	margin-right: 5px;
+}
+
+.base h2 {
+	border-bottom: 1px solid #cc3333;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+
+}
+
+.base li {
+	margin-left: 15px;
+
+}
+
+.fl_right {
+	float: right;
+	width: 50%;
+
+}
+
+.one {
+  float: right;
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* aside*/
+.box_wrapp {
+	width: 31%;
+	float: left;
+	margin: 10px 10px 10px 0;
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 0.9em;
+}
+
+.news {
+	color: #4c4c4c;
+	font-size: 1.3em;
+	border-bottom: 1px solid #4c4c4c;
+	margin-top: 20px;
+}
+
+.box_wrapp h2 {
+	color: #4c4c4c;
+	font-size: 1.2em;
+
+}
+
+/*float entfernen*/
+
+.cllfix {
+	clear: both;
+	height: 30px;
+
+}
